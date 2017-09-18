@@ -126,6 +126,7 @@ func (s *ScrollService) GetFirstPage() (*SearchResult, error) {
 
 	// Search
 	path += "/_search"
+	path = "/arius" + path
 
 	// Parameters
 	params := make(url.Values)
@@ -175,6 +176,7 @@ func (s *ScrollService) GetNextPage() (*SearchResult, error) {
 
 	// Build url
 	path := "/_search/scroll"
+	path = "/arius" + path
 
 	// Parameters
 	params := make(url.Values)
